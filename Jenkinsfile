@@ -17,6 +17,16 @@ pipeline {
                 sh 'mvn --version'
             }
         }
+        stage('test'){
+            steps{
+                sh 'echo testing'
+            }
+        }
+        stage('deploy'){
+            steps{
+                sh 'echo deploying'
+            }
+        }
     }
 //     post {
 //         always {
