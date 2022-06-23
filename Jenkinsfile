@@ -22,6 +22,11 @@ pipeline {
                 echo 'testing'
             }
         }
+        stage('sanity check'){
+            steps{
+                input 'Does everything look good?'
+            }
+        }
         stage('deploy'){
             steps{
                 echo 'deploying'
