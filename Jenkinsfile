@@ -24,6 +24,7 @@ pipeline {
         }
         stage('sanity check'){
             steps{
+                office365ConnectorSend message:'Input requested', status:'sanity check'
                 input 'Does everything look good?'
             }
         }
